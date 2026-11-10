@@ -1,0 +1,57 @@
+# World where duels happen
+world-name: economy
+
+# Command run (as the player) to send people to spawn after a duel
+spawn-command: "warp spawn"
+# Used only if the command above fails
+fallback-world: world
+
+# Biomes duels can happen in (use the biome id, e.g. plains, desert, dark_forest, savanna, taiga)
+biomes:
+  - plains
+  - desert
+  - forest
+  - savanna
+  - taiga
+
+search-radius: 3000        # arenas are searched within +/- this many blocks from 0,0
+spawn-distance: 12         # each player spawns this far from the arena centre (on opposite sides)
+arena-radius: 40           # the duel border radius around the arena centre
+border-grace-seconds: 10   # time allowed outside the border before you die
+countdown-seconds: 3
+loser-spectator-seconds: 5
+collect-seconds: 90        # winner's time to pick up the loser's items
+
+accent-color: "#00a2ff"
+
+icons:
+  sword: "⚔"
+  skull: "☠"
+  trophy: "🏆"   # if your font shows a box, change it (or use a resource-pack glyph)
+
+blocked-commands:
+  - tpa
+  - tpaccept
+  - tpahere
+  - tpyes
+  - tpno
+  - tpdeny
+  - tpcancel
+  - rtp
+  - home
+  - homes
+  - warp
+  - warps
+  - spawn
+  - back
+  - tp
+  - tphere
+  - sethome
+  - rtpq
+  - rtpqueue
+  - etpa
+  - etpaccept
+  - etpahere
+  - ertp
+  - ehome
+  - ewarp
